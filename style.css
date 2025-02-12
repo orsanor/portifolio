@@ -44,17 +44,17 @@ section {
 
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   margin-top: 100px;
 }
 
 .main-container .image {
   width: 100%;
-  max-width: 480px;
-  height: 50vh;
+  max-width: 380px;
+  height: 40vh;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
@@ -67,7 +67,7 @@ section {
 
 .main-container .content {
   color: white;
-  width: 50%;
+  width: auto;
 }
 
 .content h1 {
@@ -153,7 +153,7 @@ section {
   height: 6vh;
   margin: 30px auto;
   background-color: #ddd690;
-  color: #fff;
+  color: black;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -168,6 +168,102 @@ section {
   border: 2px solid #ddd690;
   background-color: transparent;
   box-shadow: 0 0 40px #ddd690;
+}
+
+section .content {
+  width: 80%;
+  margin: 0px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.about .about-deatils {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffa8cb;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-deatils .left {
+  width: 45%;
+}
+
+.about .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-deatils .right {
+  width: 55%;
+}
+
+section .topic {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-deatils .right p {
+  text-align: justify;
+  color: white;
+}
+
+.skills {
+  background: black;
+}
+
+footer {
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #ffa8cb;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade */
