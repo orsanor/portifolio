@@ -5,21 +5,6 @@ function downloadCV() {
     // Inicia animação de carregamento
     button.classList.add('loading');
     
-    // Array de mensagens de carregamento
-    const loadingMessages = [
-        'Preparando download...',
-        'Compactando arquivo...',
-        'Quase lá...'
-    ];
-    
-    let messageIndex = 0;
-    
-    // Atualiza mensagens de carregamento
-    const messageInterval = setInterval(() => {
-        loaderText.textContent = loadingMessages[messageIndex];
-        messageIndex = (messageIndex + 1) % loadingMessages.length;
-    }, 1000);
-    
     // Simula processo de download
     setTimeout(() => {
         const cvUrl = 'assets/Curriculo Jonathan Orsano.pdf';
